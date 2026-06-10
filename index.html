@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cilembu Brûlée — Tradisi Bertemu Kemewahan</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;1,400&family=Plus+Jakarta+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            background-color: #FFFDF9;
+        }
+        .font-serif {
+            font-family: 'Playfair Display', serif;
+        }
+    </style>
+</head>
+<body class="text-amber-950 antialiased">
+
+    <!-- NAVBAR (Responsive Layout) -->
+    <nav class="sticky top-0 z-50 bg-[#FFFDF9]/90 backdrop-blur-md border-b border-amber-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center gap-2">
+            <a href="#" class="font-serif text-xl sm:text-2xl font-bold text-amber-800 tracking-wide whitespace-nowrap">
+                Cilembu<span class="text-amber-600">.Brûlée</span>
+            </a>
+            
+            <!-- Menu Desktop (Otomatis Hilang di HP) -->
+            <div class="hidden md:flex space-x-8 font-medium text-amber-900/80">
+                <a href="#cerita" class="hover:text-amber-600 transition">Rahasia Kami</a>
+                <a href="#menu" class="hover:text-amber-600 transition">Menu Pilihan</a>
+                <a href="#testimoni" class="hover:text-amber-600 transition">Kata Mereka</a>
+            </div>
+            
+            <a href="#pesan" class="bg-amber-700 hover:bg-amber-800 text-white px-4 sm:px-5 py-2 sm:py-2.5 rounded-full font-semibold text-xs sm:text-sm shadow-md shadow-amber-700/20 transition transform hover:-translate-y-0.5 whitespace-nowrap">
+                Pesan Sekarang
+            </a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION (Stack vertikal di HP, berdampingan di PC) -->
+    <section class="max-w-6xl mx-auto px-4 sm:px-6 py-10 md:py-24 grid md:grid-cols-2 gap-8 md:gap-12 items-center">
+        <!-- Text Area -->
+        <div class="space-y-4 sm:space-y-6 text-center md:text-left order-2 md:order-1">
+            <span class="inline-block bg-amber-100 text-amber-800 text-[10px] sm:text-xs font-bold tracking-widest uppercase px-3 py-1 rounded-full">
+                Level Baru Menikmati Ubi Madu
+            </span>
+            <h1 class="font-serif text-3xl sm:text-4xl md:text-6xl font-bold text-amber-950 leading-tight">
+                Ketuk Karamelnya, Rasakan <span class="italic text-amber-700">Kelembutannya!</span>
+            </h1>
+            <p class="text-sm sm:text-base md:text-lg text-amber-900/70 leading-relaxed">
+                Bukan sekadar ubi cilembu biasa. Bayangkan kehangatan ubi madu asli yang lumer di mulut, berpadu sempurna dengan sensasi renyah lapisan gula tipis ala dessert Prancis yang ditorch langsung di depan matamu. 
+            </p>
+            <div class="pt-2 flex flex-col sm:flex-row gap-3 justify-center md:justify-start">
+                <a href="#menu" class="bg-amber-700 hover:bg-amber-800 text-white text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-sm sm:text-base shadow-lg shadow-amber-700/30 transition transform hover:-translate-y-1">
+                    Mau Coba Sekarang!
+                </a>
+                <a href="#cerita" class="border-2 border-amber-700 text-amber-700 hover:bg-amber-50 text-center px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-sm sm:text-base transition">
+                    Intip Rahasia Enaknya
+                </a>
+            </div>
+        </div>
+        
+        <!-- Image Area (Muncul di atas teks saat dibuka di HP agar visual duluan) -->
+        <div class="relative flex justify-center order-1 md:order-2 px-4 sm:px-0">
+            <div class="absolute inset-0 bg-amber-200/40 rounded-3xl transform rotate-3 scale-105 -z-10 blur-sm"></div>
+            <img src="https://i.pinimg.com/736x/7d/3e/98/7d3e988a5807334a69b88b54f7d922b6.jpg" alt="Ubi Cilembu Brûlée Premium" class="rounded-2xl shadow-xl object-cover aspect-[4/3] md:h-[450px] w-full">
+        </div>
+    </section>
+
+    <!-- HIGHLIGHT / VALUE PROPOSITION (1 Kolom di HP, 3 Kolom di PC) -->
+    <section id="cerita" class="bg-amber-950 text-amber-50 py-12 sm:py-16">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 grid gap-6 md:grid-cols-3">
+            <div class="p-6 border border-amber-800/60 rounded-xl space-y-3 bg-amber-900/20">
+                <div class="text-3xl"></div>
+                <h3 class="font-serif text-xl font-bold text-amber-300">Asli Sumedang, Madu Alami</h3>
+                <p class="text-amber-100/70 text-sm leading-relaxed">Kami menyortir ketat ubi langsung dari petani. Dipanggang perlahan sampai cairan madu alaminya keluar melimpah.</p>
+            </div>
+            <div class="p-6 border border-amber-800/60 rounded-xl space-y-3 bg-amber-900/20">
+                <div class="text-3xl"></div>
+                <h3 class="font-serif text-xl font-bold text-amber-300">Sensasi 'Crack' yang Nagih</h3>
+                <p class="text-amber-100/70 text-sm leading-relaxed">Taburan gula organik di atasnya ditorch presisi menghasilkan lapisan kaca kecokelatan yang berbunyi renyah saat diketuk sendok.</p>
+            </div>
+            <div class="p-6 border border-amber-800/60 rounded-xl space-y-3 bg-amber-900/20">
+                <div class="text-3xl"></div>
+                <h3 class="font-serif text-xl font-bold text-amber-300">Manis Pas, Nggak Bikin Eneg</h3>
+                <p class="text-amber-100/70 text-sm leading-relaxed">Tanpa tambahan pemanis buatan berbahaya. Rasa manis murni dari ubi dipadukan dengan aroma khas karamel tebu asli.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- MENU / VARIAN RASA (Grid menyesuaikan ukuran layar) -->
+    <section id="menu" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
+        <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 space-y-3">
+            <span class="text-amber-600 font-bold tracking-wider uppercase text-xs">Pilih Mood-mu Hari Ini</span>
+            <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold">Varian yang Bikin Merem Melek</h2>
+            <p class="text-sm sm:text-base text-amber-900/60">Dari yang klasik otentik sampai perpaduan modern yang belum pernah kamu coba sebelumnya.</p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+            <!-- Menu 1 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-amber-100 group hover:shadow-xl transition duration-300 flex flex-col">
+                <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/7d/3e/98/7d3e988a5807334a69b88b54f7d922b6.jpg" alt="The Classic Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-5 sm:p-6 space-y-3 flex-transform flex-grow flex flex-col justify-between">
+                    <div class="flex justify-between items-start gap-2">
+                        <h3 class="font-serif text-lg sm:text-xl font-bold">The Classic Brûlée</h3>
+                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 28k</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Menu wajib bagi pemula! Keaslian cita rasa ubi cilembu panggang berlumur madu dengan mahkota karamel renyah di atasnya.</p>
+                </div>
+            </div>
+
+            <!-- Menu 2 -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-amber-100 group hover:shadow-xl transition duration-300 flex flex-col">
+                <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
+                    <img src="https://i.pinimg.com/1200x/6e/ca/ef/6ecaefcd0bcf389050f6ab12108c888c.jpg" alt="Vanilla Ice Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-5 sm:p-6 space-y-3 flex-transform flex-grow flex flex-col justify-between">
+                    <div class="flex justify-between items-start gap-2">
+                        <h3 class="font-serif text-lg sm:text-xl font-bold">Cold & Hot Vanilla</h3>
+                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 35k</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Perpaduan kontras yang jenius! Ubi panas yang baru matang beradu dengan satu scoop es krim vanilla premium yang dingin nan lembut.</p>
+                </div>
+            </div>
+
+            <!-- Menu 3 (Akan turun rapi di tablet, sejajar di PC) -->
+            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-amber-100 group hover:shadow-xl transition duration-300 flex flex-col sm:col-span-2 md:col-span-1">
+                <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
+                    <img src="https://i.pinimg.com/736x/03/c8/cf/03c8cf1a2e6faaeeaa376280f28fe366.jpg" alt="Cheese Melt Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-5 sm:p-6 space-y-3 flex-transform flex-grow flex flex-col justify-between">
+                    <div class="flex justify-between items-start gap-2">
+                        <h3 class="font-serif text-lg sm:text-xl font-bold">Salty-Sweet Cheese</h3>
+                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 33k</span>
+                    </div>
+                    <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Bosan yang manis saja? Nikmati taburan keju cheddar gurih melimpah yang meleleh di bawah lapisan kerak karamel bakar. Juara!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONI SECTION -->
+    <section id="testimoni" class="bg-amber-50/60 py-12 sm:py-20 border-y border-amber-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6 sm:space-y-8">
+            <h2 class="font-serif text-2xl sm:text-3xl font-bold">Mereka yang Sudah Ketagihan</h2>
+            <blockquote class="text-base sm:text-xl md:text-2xl font-serif italic text-amber-950/80 leading-relaxed px-2">
+                "Nggak pernah kepikiran ubi lokal bisa naik kelas semewah ini. Bunyi 'crack' pas sendok pertama ngetuk karamelnya memuaskan banget! Ubinya lembut parah, rasanya manis madu asli, bukan bikin seret."
+            </blockquote>
+            <div class="flex items-center justify-center space-x-3">
+                <div class="w-10 h-10 sm:w-12 h-10 sm:h-12 rounded-full bg-amber-200 overflow-hidden flex-shrink-0">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Foto Pelanggan" class="w-full h-full object-cover">
+                </div>
+                <div class="text-left">
+                    <div class="font-bold text-amber-950 text-xs sm:text-sm">Nadia Kirana</div>
+                    <div class="text-[10px] sm:text-xs text-amber-700">Food Enthusiast / Jakarta</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA / ORDER SECTION -->
+    <section id="pesan" class="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center space-y-6">
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-amber-950">Jangan Sampai Kehabisan!</h2>
+        <p class="text-sm sm:text-base text-amber-900/70 max-w-lg mx-auto">Kami mengoven ubi dalam jumlah terbatas setiap harinya demi menjaga kualitas karamel agar tetap renyah saat tiba di tempatmu. Amankan punyamu sekarang sebelum kehabisan!</p>
+        <div class="pt-2 px-2">
+            <a href="https://wa.me/6285659805607" target="_blank" class="inline-flex items-center justify-center space-x-3 bg-emerald-600 hover:bg-emerald-700 text-white w-full sm:w-auto px-6 sm:px-8 py-3.5 sm:py-4 rounded-full font-bold text-base sm:text-lg shadow-lg shadow-emerald-600/20 transition transform hover:-translate-y-1">
+                <span>Pesan Lewat WhatsApp (Klik Cepat)</span>
+            </a>
+            <p class="text-[11px] sm:text-xs text-amber-900/50 mt-3">Tersedia juga di GrabFood & GoFood dengan kata kunci: <span class="font-semibold text-amber-800">Cilembu Brulee Premium</span></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-amber-950 text-amber-200/60 text-[11px] sm:text-xs py-6 sm:py-8 border-t border-amber-900">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
+            <p>&copy; 2026 Cilembu Brûlée Premium. Hak Cipta Dilindungi.</p>
+            <p>Dibuat dengan cinta untuk pencinta kuliner Indonesia.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
