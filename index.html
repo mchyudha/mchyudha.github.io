@@ -35,11 +35,18 @@
 <nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-100 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center gap-2">
         
-        <!-- Bagian Logo & Sub-header -->
-        <a href="#" class="flex flex-col transition hover:opacity-90">
-            <span class="font-serif text-2xl sm:text-3xl font-bold text-amber-900 tracking-tight whitespace-nowrap">
-                B A <span class="text-orange-600">R A</span>
-            </span>
+<a href="#" class="flex flex-col transition hover:opacity-90">
+    <!-- Kontainer horizontal untuk Teks + Logo -->
+    <div class="flex items-center gap-2">
+        <span class="font-serif text-2xl sm:text-3xl font-bold text-amber-900 tracking-tight whitespace-nowrap">
+            B A <span class="text-orange-600">R A</span>
+        </span>
+        <!-- Logo Ubi dari image_cdb0e4.png -->
+        <img src="https://i.imgur.com/V5trxom.png" alt="Logo BARA" class="w-6 h-6 sm:w-7 sm:h-7 object-contain animate-pulse-slow">
+    </div>
+    
+    <!-- Kalau kamu punya sub-header (seperti Sweet Potato Creme Brulee), dia bakal otomatis rapi di bawahnya karena flex-col -->
+</a>
             <!-- Sub-header Baru -->
             <span class="text-[9px] sm:text-[11px] font-bold text-amber-700/70 tracking-[0.2em] uppercase -mt-0.5 sm:-mt-1 ml-0.5">
                 Sweet Potato Creme Brulee
@@ -120,8 +127,18 @@
     </div>
 </section>
 
-<!-- RAHASIA KAMI: Break visual pakai bg-stone-50 -->
-<section id="cerita" class="bg-stone-50 text-amber-950 py-12 sm:py-16">
+<!-- RAHASIA KAMI: Section dengan Header -->
+<section id="cerita" class="bg-stone-50 text-amber-950 py-16 sm:py-24">
+    <!-- Header Section -->
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 mb-12 sm:mb-16 text-center">
+        <span class="text-amber-600 font-bold tracking-wider uppercase text-xs">Kenapa Harus BARA?</span>
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold mt-3 mb-4">Rahasia di Balik Ubi Lumer dan Crunchy</h2>
+        <p class="text-sm sm:text-base text-stone-600 max-w-xl mx-auto">
+            Kita ingin setiap gigitan menjadi pengalaman yang layak buat dibagikan, dinikmati, dan diingat..
+        </p>
+    </div>
+
+    <!-- Container Kartu -->
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid gap-6 md:grid-cols-3">
         
         <!-- Kartu 1 -->
@@ -176,7 +193,11 @@
             <div class="p-5 sm:p-6 space-y-3 flex-grow flex flex-col">
                 <div class="flex justify-between items-start gap-2">
                     <h3 class="font-serif text-lg sm:text-xl font-bold">The Classic Brûlée</h3>
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 17k</span>
+                    <!-- Harga Coret Setup -->
+                    <div class="text-right flex flex-col items-end">
+                        <span class="text-stone-400 text-xs line-through">Rp 25k</span>
+                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap mt-0.5">Rp 17k</span>
+                    </div>
                 </div>
                 <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Pilihan paling aman buat yang baru pertama nyoba! Ubi madu panggang asli yang legitnya juara, dikasih mahkota karamel yang <em>super crunchy</em>. <em>Classic never goes wrong!</em></p>
             </div>
@@ -190,7 +211,11 @@
             <div class="p-5 sm:p-6 space-y-3 flex-grow flex flex-col">
                 <div class="flex justify-between items-start gap-2">
                     <h3 class="font-serif text-lg sm:text-xl font-bold">Cold & Hot Vanilla</h3>
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 27k</span>
+                    <!-- Harga Coret Setup -->
+                    <div class="text-right flex flex-col items-end">
+                        <span class="text-stone-400 text-xs line-through">Rp 35k</span>
+                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap mt-0.5">Rp 27k</span>
+                    </div>
                 </div>
                 <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Kombinasi <em>mind-blowing</em> buat pecinta <em>dessert</em>! Ubi panas yang baru keluar oven langsung ketemu es krim vanilla dingin yang lembut banget. Sensasinya bener-bener <em>next level</em>!</p>
             </div>
@@ -204,7 +229,11 @@
             <div class="p-5 sm:p-6 space-y-3 flex-grow flex flex-col">
                 <div class="flex justify-between items-start gap-2">
                     <h3 class="font-serif text-lg sm:text-xl font-bold">Salty-Sweet Cheese</h3>
-                    <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 37k</span>
+                    <!-- Harga Coret Setup -->
+                    <div class="text-right flex flex-col items-end">
+                        <span class="text-stone-400 text-xs line-through">Rp 45k</span>
+                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap mt-0.5">Rp 37k</span>
+                    </div>
                 </div>
                 <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Tim gurih merapat! Taburan keju cheddar melimpah yang <em>melted</em> nyampur sama lumeran ubi dan karamel <em>crispy</em>. Rasa asin-manisnya nge-<em>blend</em> sempurna. <em>Approved</em> banget rasanya!</p>
             </div>
@@ -213,7 +242,7 @@
 </section>
 
 <!-- TESTIMONI SECTION -->
-    <section id="testimoni" class="bg-amber-50/60 py-12 sm:py-20 border-y border-amber-100 overflow-hidden">
+    <section id="testimoni" class="bg-stone-50/60 py-12 sm:py-20 border-y border-stone-100 overflow-hidden">
         <div class="max-w-6xl mx-auto px-4 sm:px-6 mb-10">
             <div class="text-center max-w-2xl mx-auto space-y-3">
                 <span class="text-amber-600 font-bold tracking-wider uppercase text-xs">Testimoni langsung dari pelanggan kita</span>
@@ -579,8 +608,7 @@
                 </p>
                 
                 <p class="text-xl sm:text-2xl font-serif font-bold text-orange-700 pt-2">
-                    Semua pengalaman itu lahir dari satu hal.<br />
-                    <span class="text-3xl">Bara.</span>
+                    Kesempurnaan tidak lahir dari kobaran api, tetapi dari bara yang terus menyala.
                 </p>
             </div>
         </div>
