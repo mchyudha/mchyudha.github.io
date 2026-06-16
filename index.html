@@ -14,7 +14,7 @@
     <style>
         body {
             font-family: 'Plus Jakarta Sans', sans-serif;
-            background-color: #FFFDF9;
+            /* Dihapus warna #FFFDF9 agar bisa pakai class Tailwind langsung */
         }
         .font-serif {
             font-family: 'Playfair Display', serif;
@@ -29,10 +29,10 @@
         }
     </style>
 </head>
-<body class="text-amber-950 antialiased">
+<body class="bg-white text-amber-950 antialiased">
 
-    <!-- NAV BAR (Pembaruan: Font logo diperbesar sedikit agar lebih proporsional) -->
-<nav class="sticky top-0 z-50 bg-[#FFFDF9]/95 backdrop-blur-sm border-b border-amber-100/50 shadow-sm">
+    <!-- NAV BAR -->
+<nav class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-stone-100 shadow-sm">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 py-4 flex justify-between items-center gap-2">
         <a href="#" class="font-serif text-2xl sm:text-3xl font-bold text-amber-900 tracking-tight whitespace-nowrap transition hover:opacity-90">
             Cilem<span class="text-orange-600">Brûlée</span>
@@ -40,7 +40,7 @@
         
         <div class="hidden md:flex space-x-9 font-semibold text-amber-950/80">
             <a href="#cerita" class="hover:text-orange-700 transition relative group">
-                Rahasia Kami
+                Rahasia Kita
                 <span class="absolute bottom-0 left-0 w-0 h-0.5 bg-orange-500 transition-all group-hover:w-full"></span>
             </a>
             <a href="#menu" class="hover:text-orange-700 transition relative group">
@@ -59,9 +59,9 @@
     </div>
 </nav>
 
-<section class="relative bg-[#FFFDF9] overflow-hidden">
-    <!-- Latar Belakang Gradasi Halus (Pengganti bentuk abstrak yang mengganggu) -->
-    <div class="absolute inset-0 bg-gradient-to-br from-[#FFFDF9] via-[#FFFDF9] to-orange-50/40 z-0"></div>
+<!-- HERO SECTION: Putih bersih dengan gradasi tipis -->
+<section class="relative bg-white overflow-hidden">
+    <div class="absolute inset-0 bg-gradient-to-br from-white via-white to-orange-50/40 z-0"></div>
 
     <div class="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 py-12 md:py-20 grid md:grid-cols-2 gap-10 md:gap-16 items-center">
         
@@ -69,17 +69,16 @@
         <div class="space-y-5 sm:space-y-6 text-center md:text-left">
             <div class="inline-flex items-center gap-2 bg-orange-50 text-orange-700 text-xs sm:text-sm font-bold tracking-wider uppercase px-4 py-1.5 rounded-full border border-orange-100 shadow-sm">
                 <svg class="w-4 h-4 text-orange-500" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
-                Level Baru Menikmati Ubi Madu
+                The Next Level of Ubi Cilembu!
             </div>
             
-            <!-- Ukuran font disesuaikan agar tidak meluber -->
             <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-stone-900 leading-tight md:leading-tight">
-                Ketuk <span class="text-orange-600">Karamelnya</span>,<br class="hidden sm:block" />
-                Rasakan <span class="italic font-serif text-amber-700">Kelembutannya!</span>
+            Pecahin <span class="text-orange-600">Karamelnya</span>,<br class="hidden sm:block" />
+            Auto <span class="italic font-serif text-amber-700">Lumer di Mulut!</span>
             </h1>
             
             <p class="text-sm sm:text-base md:text-lg text-stone-700 leading-relaxed max-w-lg mx-auto md:mx-0">
-                Bukan sekadar ubi cilembu biasa. Bayangkan kehangatan ubi madu asli yang lumer di mulut, berpadu sempurna dengan sensasi <strong class="text-orange-800">renyah lapisan gula tipis</strong> ala dessert Prancis yang ditorch langsung di depan matamu.
+                Ubi cilembu biasa? <em>Sorry</em>, ini beda level! Cobain deh sensasi ubi madu legit yang super lumer, plus <strong class="text-orange-800">ekstra crack dari karamel</strong> yang di-<em>torch live</em> di depan kamu. Sekali suap, <em>auto</em> gagal <em>move on</em>!
             </p>
             
             <div class="pt-2 flex flex-col sm:flex-row gap-3 sm:gap-4 justify-center md:justify-start">
@@ -92,7 +91,7 @@
             </div>
         </div>
         
-        <!-- Video Kanan (Kembali ke desain clean, ukuran dibatasi) -->
+        <!-- Video Kanan -->
         <div class="relative mx-auto w-full max-w-[280px] sm:max-w-xs md:max-w-sm lg:max-w-[380px] aspect-[4/5] md:aspect-[3/4] bg-white rounded-[2rem] shadow-2xl shadow-orange-900/15 overflow-hidden group">
             <video 
                 id="interactive-video" 
@@ -107,154 +106,422 @@
         
     </div>
 </section>
-<section id="cerita" class="bg-[#FAF8F5] text-amber-950 py-12 sm:py-16">
+
+<!-- RAHASIA KAMI: Break visual pakai bg-stone-50 -->
+<section id="cerita" class="bg-stone-50 text-amber-950 py-12 sm:py-16">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid gap-6 md:grid-cols-3">
         
         <!-- Kartu 1 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-amber-100/50 group transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-stone-200 group transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col">
             <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
-                <!-- Ganti link src ini dengan gambar ubi atau petani Anda -->
                 <img src="https://i.pinimg.com/1200x/2a/95/a6/2a95a6bfc925fae827493a55c5648408.jpg" alt="Asli Sumedang" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-6 space-y-3 flex-grow flex flex-col">
                 <h3 class="font-serif text-xl font-bold text-amber-950">Asli Sumedang, Madu Alami</h3>
-                <p class="text-amber-900/70 text-sm leading-relaxed">Kami menyortir ketat ubi langsung dari petani. Dipanggang perlahan sampai cairan madu alaminya keluar melimpah.</p>
+                <p class="text-amber-900/70 text-sm leading-relaxed">Nggak pakai ubi sembarangan! Kita sortir ketat langsung dari petaninya, terus di-<em>slow roast</em> sampai cairan madu alaminya keluar melimpah. Manisnya beneran murni dari alam!</p>
             </div>
         </div>
 
         <!-- Kartu 2 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-amber-100/50 group transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-stone-200 group transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col">
             <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
-                <!-- Ganti link src ini dengan gambar proses torching/gula karamel -->
                 <img src="https://i.pinimg.com/736x/4d/1e/99/4d1e99288408b5fbfad65e414a04d995.jpg" alt="Sensasi Crack" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-6 space-y-3 flex-grow flex flex-col">
                 <h3 class="font-serif text-xl font-bold text-amber-950">Sensasi 'Crack' yang Nagih</h3>
-                <p class="text-amber-900/70 text-sm leading-relaxed">Taburan gula organik di atasnya ditorch presisi menghasilkan lapisan kaca kecokelatan yang berbunyi renyah saat diketuk sendok.</p>
+                <p class="text-amber-900/70 text-sm leading-relaxed">Gula organik di atasnya di-<em>torch</em> presisi sampai jadi lapisan kaca karamel yang garing. Tinggal ketuk pakai sendok, sensasi <em>ASMR crack</em>-nya langsung bikin auto ngiler!</p>
             </div>
         </div>
 
         <!-- Kartu 3 -->
-        <div class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-amber-100/50 group transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col">
+        <div class="bg-white rounded-2xl overflow-hidden shadow-[0_8px_30px_rgb(0,0,0,0.04)] border border-stone-200 group transition-all duration-300 hover:shadow-[0_8px_30px_rgb(0,0,0,0.08)] flex flex-col">
             <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
-                <!-- Ganti link src ini dengan gambar tekstur/sajian manis -->
                 <img src="https://i.pinimg.com/1200x/48/65/72/486572eec83060fc933c88a9c26163c0.jpg" alt="Manis Pas" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
             <div class="p-6 space-y-3 flex-grow flex flex-col">
                 <h3 class="font-serif text-xl font-bold text-amber-950">Manis Pas, Nggak Bikin Eneg</h3>
-                <p class="text-amber-900/70 text-sm leading-relaxed">Tanpa tambahan pemanis buatan berbahaya. Rasa manis murni dari ubi dipadukan dengan aroma khas karamel tebu asli.</p>
+                <p class="text-amber-900/70 text-sm leading-relaxed"><em>Say no to</em> pemanis buatan! Rasa manisnya <em>pure</em> dari ubi pilihan, dipaduin sama aroma khas karamel tebu yang wangi banget. Manisnya beneran <em>balance</em>, dijamin nggak bakal bikin kamu eneg!</p>
             </div>
         </div>
     </div>
 </section>
-    <section id="menu" class="max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
-        <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 space-y-3">
-            <span class="text-amber-600 font-bold tracking-wider uppercase text-xs">Pilih Mood-mu Hari Ini</span>
-            <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold">Varian yang Bikin Merem Melek</h2>
-            <p class="text-sm sm:text-base text-amber-900/60">Dari yang klasik otentik sampai perpaduan modern yang belum pernah kamu coba sebelumnya.</p>
-        </div>
 
-        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
-            <!-- Menu 1 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-amber-100 group hover:shadow-xl transition duration-300 flex flex-col">
-                <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
-                    <img src="https://i.pinimg.com/736x/7d/3e/98/7d3e988a5807334a69b88b54f7d922b6.jpg" alt="The Classic Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-                <div class="p-5 sm:p-6 space-y-3 flex-transform flex-grow flex flex-col justify-between">
-                    <div class="flex justify-between items-start gap-2">
-                        <h3 class="font-serif text-lg sm:text-xl font-bold">The Classic Brûlée</h3>
-                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 28k</span>
-                    </div>
-                    <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Menu wajib bagi pemula! Keaslian cita rasa ubi cilembu panggang berlumur madu dengan mahkota karamel renyah di atasnya.</p>
-                </div>
+<!-- MENU SECTION: Kembali ke bg-white -->
+<section id="menu" class="bg-white max-w-6xl mx-auto px-4 sm:px-6 py-16 md:py-20">
+    <div class="text-center max-w-2xl mx-auto mb-12 md:mb-16 space-y-3">
+        <span class="text-amber-600 font-bold tracking-wider uppercase text-xs">Pilih Mood-mu Hari Ini</span>
+        <h2 class="font-serif text-2xl sm:text-3xl md:text-4xl font-bold">Varian yang Bikin Merem Melek</h2>
+        <p class="text-sm sm:text-base text-amber-900/60">Dari yang klasik otentik sampai perpaduan modern yang belum pernah kamu coba sebelumnya.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-8">
+        <!-- Menu 1 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200 group hover:shadow-xl transition duration-300 flex flex-col">
+            <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
+                <img src="https://i.pinimg.com/736x/7d/3e/98/7d3e988a5807334a69b88b54f7d922b6.jpg" alt="The Classic Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
             </div>
-
-            <!-- Menu 2 -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-amber-100 group hover:shadow-xl transition duration-300 flex flex-col">
-                <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
-                    <img src="https://i.pinimg.com/1200x/6e/ca/ef/6ecaefcd0bcf389050f6ab12108c888c.jpg" alt="Vanilla Ice Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            <div class="p-5 sm:p-6 space-y-3 flex-grow flex flex-col">
+                <div class="flex justify-between items-start gap-2">
+                    <h3 class="font-serif text-lg sm:text-xl font-bold">The Classic Brûlée</h3>
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 28k</span>
                 </div>
-                <div class="p-5 sm:p-6 space-y-3 flex-transform flex-grow flex flex-col justify-between">
-                    <div class="flex justify-between items-start gap-2">
-                        <h3 class="font-serif text-lg sm:text-xl font-bold">Cold & Hot Vanilla</h3>
-                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 35k</span>
-                    </div>
-                    <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Perpaduan kontras yang jenius! Ubi panas yang baru matang beradu dengan satu scoop es krim vanilla premium yang dingin nan lembut.</p>
-                </div>
-            </div>
-
-            <!-- Menu 3 (Akan turun rapi di tablet, sejajar di PC) -->
-            <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-amber-100 group hover:shadow-xl transition duration-300 flex flex-col sm:col-span-2 md:col-span-1">
-                <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
-                    <img src="https://i.pinimg.com/736x/03/c8/cf/03c8cf1a2e6faaeeaa376280f28fe366.jpg" alt="Cheese Melt Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
-                </div>
-                <div class="p-5 sm:p-6 space-y-3 flex-transform flex-grow flex flex-col justify-between">
-                    <div class="flex justify-between items-start gap-2">
-                        <h3 class="font-serif text-lg sm:text-xl font-bold">Salty-Sweet Cheese</h3>
-                        <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 33k</span>
-                    </div>
-                    <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Bosan yang manis saja? Nikmati taburan keju cheddar gurih melimpah yang meleleh di bawah lapisan kerak karamel bakar. Juara!</p>
-                </div>
+                <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Pilihan paling aman buat yang baru pertama nyoba! Ubi madu panggang asli yang legitnya juara, dikasih mahkota karamel yang <em>super crunchy</em>. <em>Classic never goes wrong!</em></p>
             </div>
         </div>
-    </section>
 
-    <!-- TESTIMONI SECTION -->
- <!-- TESTIMONI SECTION -->
-    <section id="testimoni" class="bg-amber-50/60 py-12 sm:py-20 border-y border-amber-100">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 space-y-12">
+        <!-- Menu 2 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200 group hover:shadow-xl transition duration-300 flex flex-col">
+            <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
+                <img src="https://i.pinimg.com/1200x/6e/ca/ef/6ecaefcd0bcf389050f6ab12108c888c.jpg" alt="Vanilla Ice Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="p-5 sm:p-6 space-y-3 flex-grow flex flex-col">
+                <div class="flex justify-between items-start gap-2">
+                    <h3 class="font-serif text-lg sm:text-xl font-bold">Cold & Hot Vanilla</h3>
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 35k</span>
+                </div>
+                <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Kombinasi <em>mind-blowing</em> buat pecinta <em>dessert</em>! Ubi panas yang baru keluar oven langsung ketemu es krim vanilla dingin yang lembut banget. Sensasinya bener-bener <em>next level</em>!</p>
+            </div>
+        </div>
+
+        <!-- Menu 3 -->
+        <div class="bg-white rounded-2xl overflow-hidden shadow-md border border-stone-200 group hover:shadow-xl transition duration-300 flex flex-col sm:col-span-2 md:col-span-1">
+            <div class="h-48 sm:h-56 bg-amber-100 relative overflow-hidden">
+                <img src="https://i.pinimg.com/736x/03/c8/cf/03c8cf1a2e6faaeeaa376280f28fe366.jpg" alt="Cheese Melt Brûlée" class="w-full h-full object-cover group-hover:scale-105 transition duration-500">
+            </div>
+            <div class="p-5 sm:p-6 space-y-3 flex-grow flex flex-col">
+                <div class="flex justify-between items-start gap-2">
+                    <h3 class="font-serif text-lg sm:text-xl font-bold">Salty-Sweet Cheese</h3>
+                    <span class="text-amber-700 font-bold bg-amber-50 px-2.5 py-0.5 rounded-full text-xs sm:text-sm whitespace-nowrap">Rp 33k</span>
+                </div>
+                <p class="text-xs sm:text-sm text-amber-900/70 leading-relaxed">Tim gurih merapat! Taburan keju cheddar melimpah yang <em>melted</em> nyampur sama lumeran ubi dan karamel <em>crispy</em>. Rasa asin-manisnya nge-<em>blend</em> sempurna. <em>Approved</em> banget rasanya!</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- TESTIMONI SECTION -->
+    <section id="testimoni" class="bg-amber-50/60 py-12 sm:py-20 border-y border-amber-100 overflow-hidden">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 mb-10">
             <div class="text-center max-w-2xl mx-auto space-y-3">
                 <span class="text-amber-600 font-bold tracking-wider uppercase text-xs">Testimoni langsung dari pelanggan kita</span>
                 <h2 class="font-serif text-2xl sm:text-3xl font-bold">Apa Kata Mereka?</h2>
             </div>
+        </div>
 
-            <!-- Grid Testimoni -->
-            <div class="grid md:grid-cols-3 gap-6">
+        <!-- Tambahan Gaya CSS untuk Animasi Geser Otomatis (Infinite Scroll) -->
+        <style>
+            @keyframes marquee {
+                0% { transform: translateX(0%); }
+                100% { transform: translateX(-50%); }
+            }
+            .animate-marquee {
+                display: flex;
+                width: max-content;
+                animation: marquee 50s linear infinite;
+            }
+            .animate-marquee:hover {
+                animation-play-state: paused;
+            }
+        </style>
+
+        <!-- Container Slider Otomatis -->
+        <div class="relative w-full overflow-x-hidden py-4">
+            <!-- Gradasi Transparan di Kiri dan Kanan (Efek Fade Premium) -->
+            <div class="absolute inset-y-0 left-0 w-16 bg-gradient-to-r from-[#FFFDF9] to-transparent z-10 pointer-events-none hidden md:block"></div>
+            <div class="absolute inset-y-0 right-0 w-16 bg-gradient-to-l from-[#FFFDF9] to-transparent z-10 pointer-events-none hidden md:block"></div>
+
+            <!-- Track Animasi -->
+            <div class="animate-marquee gap-6 px-4">
                 
-                <!-- Testimoni 1 (Nadia - Klasik/Serius) -->
-                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4">
-                    <blockquote class="font-serif italic text-amber-950/80 text-sm sm:text-base leading-relaxed">
+                <!-- ================= BARIS ASLI (15 TESTIMONI) ================= -->
+                
+                <!-- 1. Nadia Kirana -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
                         "Nggak pernah kepikiran ubi lokal bisa naik kelas semewah ini. Bunyi 'crack' pas sendok pertama ngetuk karamelnya memuaskan banget! Ubinya lembut parah, manis madu asli."
                     </blockquote>
                     <div class="flex items-center space-x-3 pt-2">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden flex-shrink-0">
-                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Foto Nadia" class="w-full h-full object-cover">
-                        image.png</div>
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Nadia" class="w-full h-full object-cover">
+                        </div>
                         <div class="text-left">
-                            <div class="font-bold text-amber-950 text-xs sm:text-sm">Nadia Kirana</div>
-                            <div class="text-[10px] sm:text-xs text-amber-700">Food Enthusiast / Jakarta</div>
+                            <div class="font-bold text-amber-950 text-xs">Nadia Kirana</div>
+                            <div class="text-[10px] text-amber-700">Food Enthusiast / Jakarta</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimoni 2 (Parodi Food Vlogger - Lucu/Heboh) -->
-                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4">
-                    <blockquote class="font-serif italic text-amber-950/80 text-sm sm:text-base leading-relaxed">
-                        "Demi apa pun ini ubi atau kasur hotel bintang lima? Empuk bener! Pas digigit, karamelnya *CRUNCHY* langsung meledak di mulut. Fix, lupakan diet, ini mah *SURENDUL TAK KENDUL-KENDUL!*"
+                <!-- 2. Nex Mangga -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Demi apa pun ini ubi atau kasur hotel bintang lima? Empuk bener! Pas digigit, karamelnya <strong class="font-bold not-italic text-amber-700">CRUNCHY</strong> langsung meledak di mulut. Fix, lupakan diet, ini mah <span class="not-italic font-bold">SURENDUL TAK KENDUL-KENDUL!</span>"
                     </blockquote>
                     <div class="flex items-center space-x-3 pt-2">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden flex-shrink-0">
-                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150" alt="Foto Mgdalenaf parodi" class="w-full h-full object-cover">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150" alt="Nex" class="w-full h-full object-cover">
                         </div>
                         <div class="text-left">
-                            <div class="font-bold text-amber-950 text-xs sm:text-sm">Nex Mangga / @makanterusss</div>
-                            <div class="text-[10px] sm:text-xs text-amber-700">Food Vlogger Kelas Berat</div>
+                            <div class="font-bold text-amber-950 text-xs">Nex Mangga / @makanterusss</div>
+                            <div class="text-[10px] text-amber-700">Food Vlogger Kelas Berat</div>
                         </div>
                     </div>
                 </div>
 
-                <!-- Testimoni 3 (Parodi Chef Terkenal - Elegan tapi Kocak) -->
-                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4">
-                    <blockquote class="font-serif italic text-amber-950/80 text-sm sm:text-base leading-relaxed">
-                        "Kematangan ubi cilembu-nya *spot on*. Karamelisasi di atasnya tipis dan presisi, tidak *overcooked*. Tapi gara-gara ini, saya jadi malas masak di galeri. Tolong kirim satu boks ke rumah saya sekarang."
+                <!-- 3. Chef Junaedi -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Kematangan ubi cilembu-nya <span class="not-italic font-bold text-amber-800">spot on</span>. Karamelisasi di atasnya tipis dan presisi, tidak <span class="not-italic font-bold text-amber-800">overcooked</span>. Tapi gara-gara ini, saya jadi malas masak di galeri. Tolong kirim satu boks ke rumah saya sekarang."
                     </blockquote>
                     <div class="flex items-center space-x-3 pt-2">
-                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden flex-shrink-0">
-                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Foto Chef Arnold parodi" class="w-full h-full object-cover">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Chef Junaedi" class="w-full h-full object-cover">
                         </div>
                         <div class="text-left">
-                            <div class="font-bold text-amber-950 text-xs sm:text-sm">Chef Junaedi</div>
-                            <div class="text-[10px] sm:text-xs text-amber-700">Juri Masak Galeri Tetangga</div>
+                            <div class="font-bold text-amber-950 text-xs">Chef Junaedi</div>
+                            <div class="text-[10px] text-amber-700">Juri Masak Galeri Tetangga</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 4. Jerome Polin (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Mantappu Jiwa!! Rumus matematika rasa ubi ini beneran valid: Ubi ditambah Karamel sama dengan Kebahagiaan Mutlak. Kelembutan ubinya berbanding lurus dengan kegaringan gulanya. Skornya 1000 dari 10!"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&q=80&w=150" alt="Jerome" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Jerome Piring / @nihongomantappu</div>
+                            <div class="text-[10px] text-amber-700">Blogger Pendidikan & Info Math</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 5. Pak Bondan (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Mak nyuss! Top markotop! Madu alami dari ubi cilembunya meleleh keluar berpadu elegan dengan aroma burnt sugar dari teknik torch-nya. Ini mah namanya surga kuliner lokal yang naik kelas."
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=150" alt="Pak Bondan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Pak Bondan Kulineran</div>
+                            <div class="text-[10px] text-amber-700">Legenda Pemburu Rasa</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 6. Tasya Farasya (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Gila, ini sih approved parah! Wanginya mewah banget sewangi parfum Oud mahal. Pas masuk mulut tuh teksturnya rich, porsinya generous, pokoknya racun banget kalian wajib beli!"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=150" alt="Tasya" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Tasya Tamasya</div>
+                            <div class="text-[10px] text-amber-700">Beauty & Food Reviewer Sultan</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 7. Fitra Eri (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Setelah mencoba ubi ini sejauh 5 suapan, impresi berkendara.. maksud saya impresi makannya luar biasa. Build quality karamelnya kokoh, akselerasi rasa manis di lidah sangat instan. Saya suka."
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&q=80&w=150" alt="Fitra" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Fitra Setir / @fitraeri_kw</div>
+                            <div class="text-[10px] text-amber-700">Reviewer Segala Macam Otomotif & Ubi</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 8. Kak Jill (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Adik kak jill... ubi brulee-nya manis manja, lembut dan wangi sayang... Karamelnya krispi sepuluh gelombang kanan sepuluh gelombang kiri, bikin ketagihan darleng, buruan pesen!"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&q=80&w=150" alt="Kak Jill" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Kak Jill Gorden</div>
+                            <div class="text-[10px] text-amber-700">Tiktokers Gelombang Asmara</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 9. Arif Muhammad / Mak Beti (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Heh Beti! Kau tengok ini ubi, kau ketuk atasnya bunyi kletuk-kletuk. Pas dimakan... mak oii, lumer langsung kek air liur kau pas tidur siang! Paten kali rasanya, gak pelit madu!"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&q=80&w=150" alt="Mak Beti" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Mak Beti Sleman</div>
+                            <div class="text-[10px] text-amber-700">Ibu Rumah Tangga Multi-Talenta</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 10. Raffi Ahmad (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Gokil sih ini! Nagita aja sampai borong 3 gerobak buat dibawa ke Andara. Enak parah guys, ubinya manis ditorch langsung, bener-bener sultan rasanya top mantap is the best!"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=150" alt="Raffi" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Raffi Sultan Andara</div>
+                            <div class="text-[10px] text-amber-700">Artis / Rans Ubi Division</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 11. Raditya Dika (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Sebagai orang yang mageran, ubi ini adalah sebuah penemuan besar. Gak perlu dikunyah keras-keras, taruh di lidah langsung pasrah meleleh sendiri. Komedi saya kalah cair sama ubi ini."
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?auto=format&fit=crop&q=80&w=150" alt="Radit" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Raditya Diko</div>
+                            <div class="text-[10px] text-amber-700">Bapak-Bapak Rumah Tangga / Stand-Up</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 12. Tretan Muslim (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Rasa ubi ini bener-bener Coki.. eh maksud saya, bener-bener <span class="not-italic font-bold text-red-700">Unpredictable</span>! Perpaduan kultur Sumedang dan Prancis yang sangat toleran di dalam mulut. Sangat di luar nalar!"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1501196354995-cbb51c65aaea?auto=format&fit=crop&q=80&w=150" alt="Tretan" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Tretan Mualim</div>
+                            <div class="text-[10px] text-amber-700">Ketua Pemuda Tersesat Kuliner</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 13. Alshad Ahmad (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Cenora sama Jinjan aja sampai lirik-lirik pas saya makan ubi brulee ini di depan kandang. Sensasi renyah karamelnya bener-bener eksotis dan liar, wajib dicoba penyuka kuliner buas!"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Alshad" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Alshad Penjinak Ubi</div>
+                            <div class="text-[10px] text-amber-700">Pecinta Satwa & Ubi Langka</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 14. Deddy Corbuzier (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Don't take me wrong ya, gua biasanya anti cheat day makanan manis. Tapi pas nyoba ubi brulee ini... Don't watch! Gua habis dua boks sendirian! Lu harus rasain sendiri sensasi karamelnya."
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1500048993953-d23a436266cf?auto=format&fit=crop&q=80&w=150" alt="Deddy" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Om Deddy Kobuser</div>
+                            <div class="text-[10px] text-amber-700">Master of Podcast & Karbohidrat</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 15. Fuji (Parodi) -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Ubi Brulee ter-candu tahun ini sih fix! Rasanya se-vibes itu, manisnya pas nggak bikin eneg. Cocok banget buat nemenin ngonten seharian atau pas lagi gabut di rumah. Luvv banget! ❤️"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&q=80&w=150" alt="Fuji" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Fujian / @fujian_kw</div>
+                            <div class="text-[10px] text-amber-700">Selebgram Candu Karamel</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- ================= BARIS DUPLIKAT (Wajib untuk membuat Efek Looping Mulus) ================= -->
+                
+                <!-- Duplikat 1 -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0" aria-hidden="true">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Nggak pernah kepikiran ubi lokal bisa naik kelas semewah ini. Bunyi 'crack' pas sendok pertama ngetuk karamelnya memuaskan banget! Ubinya lembut parah, manis madu asli."
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&q=80&w=150" alt="Nadia" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Nadia Kirana</div>
+                            <div class="text-[10px] text-amber-700">Food Enthusiast / Jakarta</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplikat 2 -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0" aria-hidden="true">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Demi apa pun ini ubi atau kasur hotel bintang lima? Empuk bener! Pas digigit, karamelnya <strong class="font-bold not-italic text-amber-700">CRUNCHY</strong> langsung meledak di mulut. Fix, lupakan diet, ini mah <span class="not-italic font-bold">SURENDUL TAK KENDUL-KENDUL!</span>"
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&q=80&w=150" alt="Nex" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Nex Mangga / @makanterusss</div>
+                            <div class="text-[10px] text-amber-700">Food Vlogger Kelas Berat</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Duplikat 3 -->
+                <div class="bg-white p-6 rounded-2xl border border-amber-100/70 shadow-sm flex flex-col justify-between space-y-4 w-[320px] sm:w-[360px] shrink-0" aria-hidden="true">
+                    <blockquote class="font-serif italic text-amber-950/80 text-sm leading-relaxed">
+                        "Kematangan ubi cilembu-nya <span class="not-italic font-bold text-amber-800">spot on</span>. Karamelisasi di atasnya tipis dan presisi, tidak <span class="not-italic font-bold text-amber-800">overcooked</span>. Tapi gara-gara ini, saya jadi malas masak di galeri. Tolong kirim satu boks ke rumah saya sekarang."
+                    </blockquote>
+                    <div class="flex items-center space-x-3 pt-2">
+                        <div class="w-10 h-10 rounded-full bg-amber-200 overflow-hidden shrink-0">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=150" alt="Chef Junaedi" class="w-full h-full object-cover">
+                        </div>
+                        <div class="text-left">
+                            <div class="font-bold text-amber-950 text-xs">Chef Junaedi</div>
+                            <div class="text-[10px] text-amber-700">Juri Masak Galeri Tetangga</div>
                         </div>
                     </div>
                 </div>
@@ -263,74 +530,68 @@
         </div>
     </section>
 
-<!-- CTA / ORDER SECTION -->
-<section id="pesan" class="max-w-4xl mx-auto px-4 sm:px-6 py-16 sm:py-24 text-center">
-    <div class="space-y-5 sm:space-y-6">
+<!-- CTA / ORDER SECTION: Sentuhan hangat bg-orange-50/50 sebagai penutup -->
+<section id="pesan" class="bg-white-50/50 border-t border-orange-100 w-full">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-24 flex flex-col md:flex-row gap-10 lg:gap-16 items-center">
         
-        <span class="inline-block bg-orange-50 text-orange-600 font-bold tracking-wider uppercase text-xs sm:text-sm px-4 py-1.5 rounded-full border border-orange-100 shadow-sm">
-            Waktunya Nyemil!
-        </span>
-        
-        <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-amber-950 leading-tight">
-            Jangan Sampai <span class="text-orange-600">Kehabisan!</span>
-        </h2>
-        
-        <p class="text-sm sm:text-base md:text-lg text-amber-900/80 max-w-xl mx-auto leading-relaxed font-medium">
-            Kami mengoven ubi dalam jumlah terbatas setiap harinya demi menjaga kualitas karamel agar tetap renyah saat tiba di tempatmu. Amankan porsi favoritmu sekarang!
-        </p>
-        
-        <!-- Area Tombol -->
-        <div class="pt-6 max-w-2xl mx-auto space-y-4">
+        <div class="flex-1 space-y-5 sm:space-y-6 text-center md:text-left">
+            <span class="inline-block bg-orange-100 text-orange-700 font-bold tracking-wider uppercase text-xs sm:text-sm px-4 py-1.5 rounded-full border border-orange-200/50">
+                Waktunya Nyemil!
+            </span>
             
-            <!-- Tombol WhatsApp -->
-            <a href="https://wa.me/6285659805607" target="_blank" class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white w-full px-6 py-4 sm:py-5 rounded-2xl font-extrabold text-base sm:text-lg shadow-xl shadow-[#25D366]/20 transition-all transform hover:-translate-y-1 active:translate-y-0">
-                <!-- Logo WhatsApp -->
-                <svg class="w-6 h-6 sm:w-7 sm:h-7" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
-                Pesan Cepat via WhatsApp
-            </a>
+            <h2 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold text-amber-950 leading-tight">
+                Jangan Sampai <br class="hidden lg:block" />
+                <span class="text-orange-600">Kehabisan Yaaa!</span>
+            </h2>
+            
+            <p class="text-sm sm:text-base md:text-lg text-stone-600 leading-relaxed font-medium max-w-lg mx-auto md:mx-0">
+                Biar sensasi <em>crack</em> karamelnya tetep dapet pas kamu makan, kita sengaja bikin <em>limited stock</em> setiap hari. Jangan sampai nyesel karena telat <em>checkout</em> ya!
+            </p>
+        </div>
+        
+        <div class="w-full md:w-[400px] lg:w-[450px] bg-white p-6 sm:p-8 rounded-3xl shadow-xl shadow-orange-900/5 border border-stone-100 shrink-0">
+            <div class="space-y-5">
+                
+                <a href="https://wa.me/6285659805607" target="_blank" class="flex items-center justify-center gap-3 bg-[#25D366] hover:bg-[#20bd5a] text-white w-full px-6 py-4 rounded-2xl font-extrabold text-base shadow-lg shadow-[#25D366]/20 transition-all transform hover:-translate-y-1 active:translate-y-0">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51a12.8 12.8 0 0 0-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
+                    Pesan via WhatsApp
+                </a>
 
-            <!-- Garis Pemisah -->
-            <div class="relative py-4">
-                <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-amber-200/50"></div></div>
-                <div class="relative flex justify-center">
-                    <span class="bg-[#FFFDF9] px-4 text-xs sm:text-sm text-amber-800/60 font-semibold">Atau via aplikasi favoritmu</span>
+                <div class="relative py-2">
+                    <div class="absolute inset-0 flex items-center"><div class="w-full border-t border-stone-200"></div></div>
+                    <div class="relative flex justify-center">
+                        <span class="bg-white px-3 text-[11px] sm:text-xs text-stone-400 font-semibold uppercase tracking-wider">Atau via aplikasi</span>
+                    </div>
+                </div>
+
+                <div class="grid grid-cols-3 gap-2 sm:gap-3">
+                    <a href="https://gofood.co.id/id/bandung/restaurant/ubimu-brulee-jatinangor-jl-raya-jatinangor-153-283577cb-a4bc-4f4c-8f2d-0713fe83dcc4" class="group flex flex-col items-center justify-center gap-1.5 bg-stone-50 border border-stone-200 hover:border-[#00AA13] text-stone-600 hover:text-[#00AA13] py-3 rounded-xl font-bold text-[10px] sm:text-xs shadow-sm transition-all hover:bg-white hover:-translate-y-0.5">
+                        <img src="https://cdn.simpleicons.org/gojek/00AA13" alt="GoFood Logo" class="w-6 h-6 group-hover:scale-110 transition-transform duration-300">
+                        GoFood
+                    </a>
+                    
+                    <a href="https://food.grab.com/id/id/restaurant/huiku-brulee-ubi-cilembu-oven-lembang-delivery/6-C7VKEF4ZRJKAWE" class="group flex flex-col items-center justify-center gap-1.5 bg-stone-50 border border-stone-200 hover:border-[#00B14F] text-stone-600 hover:text-[#00B14F] py-3 rounded-xl font-bold text-[10px] sm:text-xs shadow-sm transition-all hover:bg-white hover:-translate-y-0.5">
+                        <img src="https://cdn.simpleicons.org/grab/00B14F" alt="GrabFood Logo" class="w-6 h-6 group-hover:scale-110 transition-transform duration-300">
+                        GrabFood
+                    </a>
+                    
+                    <a href="https://shopee.co.id/ubi-brulee-i.87939300.29011900073" class="group flex flex-col items-center justify-center gap-1.5 bg-stone-50 border border-stone-200 hover:border-[#EE4D2D] text-stone-600 hover:text-[#EE4D2D] py-3 rounded-xl font-bold text-[10px] sm:text-xs shadow-sm transition-all hover:bg-white hover:-translate-y-0.5">
+                        <img src="https://cdn.simpleicons.org/shopee/EE4D2D" alt="ShopeeFood Logo" class="w-6 h-6 group-hover:scale-110 transition-transform duration-300">
+                        ShopeeFood
+                    </a>
                 </div>
             </div>
-
-            <!-- Grid Ojol (GoFood, GrabFood, ShopeeFood) -->
-            <div class="grid grid-cols-1 sm:grid-cols-3 gap-3">
-                
-                <!-- GoFood (Warna Hijau Gojek #00AA13) -->
-                <a href="#" class="group flex items-center justify-center gap-2.5 bg-white border border-stone-200 hover:border-[#00AA13] text-stone-700 hover:text-[#00AA13] px-4 py-3.5 rounded-xl font-bold text-sm shadow-sm transition-all hover:shadow-[#00AA13]/15 hover:-translate-y-0.5">
-                    <img src="https://cdn.simpleicons.org/gojek/00AA13" alt="GoFood Logo" class="w-5 h-5 group-hover:scale-110 transition-transform duration-300">
-                    GoFood
-                </a>
-                
-                <!-- GrabFood (Warna Hijau Grab #00B14F) -->
-                <a href="#" class="group flex items-center justify-center gap-2.5 bg-white border border-stone-200 hover:border-[#00B14F] text-stone-700 hover:text-[#00B14F] px-4 py-3.5 rounded-xl font-bold text-sm shadow-sm transition-all hover:shadow-[#00B14F]/15 hover:-translate-y-0.5">
-                    <img src="https://cdn.simpleicons.org/grab/00B14F" alt="GrabFood Logo" class="w-5 h-5 group-hover:scale-110 transition-transform duration-300">
-                    GrabFood
-                </a>
-                
-                <!-- ShopeeFood (Warna Orange Shopee #EE4D2D) -->
-                <a href="#" class="group flex items-center justify-center gap-2.5 bg-white border border-stone-200 hover:border-[#EE4D2D] text-stone-700 hover:text-[#EE4D2D] px-4 py-3.5 rounded-xl font-bold text-sm shadow-sm transition-all hover:shadow-[#EE4D2D]/15 hover:-translate-y-0.5">
-                    <img src="https://cdn.simpleicons.org/shopee/EE4D2D" alt="ShopeeFood Logo" class="w-5 h-5 group-hover:scale-110 transition-transform duration-300">
-                    ShopeeFood
-                </a>
-                
-            </div>
-            
         </div>
+        
     </div>
 </section>
 
-    <!-- FOOTER -->
-    <footer class="bg-amber-950 text-amber-200/60 text-[11px] sm:text-xs py-6 sm:py-8 border-t border-amber-900">
-        <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-2 text-center md:text-left">
-            <p>&copy; 2026 Cilembu Brûlée Premium. Hak Cipta Dilindungi.</p>
-            <p>Dibuat dengan cinta untuk pencinta kuliner Indonesia.</p>
-        </div>
-    </footer>
-
+<!-- FOOTER: Kembali ke bg-white -->
+<footer class="bg-orange text-amber-900/70 text-[11px] sm:text-xs py-6 sm:py-8 border-t border-stone-100">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row justify-between items-center gap-1 text-center md:text-left">
+        <p>&copy; 2026 Cilembu Brûlée Premium. Hak Cipta Dilindungi.</p>
+        <p>Dibuat dengan cinta untuk pencinta kuliner Indonesia.</p>
+    </div>
+</footer>
 </body>
 </html>
